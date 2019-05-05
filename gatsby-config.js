@@ -8,8 +8,8 @@ module.exports = {
         {
             resolve: `gatsby-source-contentful`,
             options: {
-                spaceId: 'dzw5babpykmq',
-                accessToken: 'v0JFamtzlIca2RRTuDcfBwErXUZTCcYKBpc-jt4WB5s',
+                spaceId: process.env.SPACE_ID,
+                accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
             },
         },
         `gatsby-plugin-playground`,
